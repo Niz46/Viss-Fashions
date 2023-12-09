@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --mainColor: #e87a14;
+    --backgroundColor: #fff;
+    --darkOne: #000;
+    --darkTwo: #45424b;
+    --lightOne: rgba(68, 195, 235, 0.8);
+    --logColor: #000;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    background: linear-gradient(60deg, #ff7b00, #3a0a04);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container .contentBx {
+    height: 71vh;
+    width: 25%;
+    background: var(--backgroundColor);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.container .contentBx .logo{
+    padding-top: 1.3rem;
+}
+
+.container .contentBx .logo .Logo{
+    width: 10%;
+}
+
+.container .contentBx .logo h3{
+    font-weight: 400;
+}
+
+.container .contentBx .logo p{
+    font-size: .6rem;
+}
+
+.container .contentBx .button-box .box{
+    width: 100%;
+    padding: 9px 25px;
+    margin: .9rem 0;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container .contentBx .button-box .box button{
+    font-size: .7rem;
+    color: var(--darkOne);
+    background: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.container .contentBx .button-box .box button img{
+    width: 15%;
+    margin-right: .6rem;
+}
+
+.container .imgBx img{
+    height: 71.1vh;
+    margin-top: .4rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.cancel img{
+    width: 1.5%;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+@media (max-width: 1080px)
+{
+    .container .imgBx{
+        display: none;
+    }
+
+    .container .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgb(255 255 255 / 0.8);
+        border-radius: none;
+    }
+}
